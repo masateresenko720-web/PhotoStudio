@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Class="PhotoStudio.Desktop.MainWindow" Title="Информационная система фотостудии" Width="1360" Height="900" MinWidth="1060" MinHeight="740">
+ <Grid ColumnDefinitions="220,*" RowDefinitions="*,Auto">
+  <Border Grid.RowSpan="2" Background="#213C55" Padding="20,28">
+   <DockPanel>
+    <StackPanel DockPanel.Dock="Top" Spacing="12"><TextBlock Text="◉  ФОТОСТУДИЯ" Foreground="White" FontSize="18" FontWeight="Bold"/><TextBlock Text="Залы • съёмки • клиенты" Foreground="#C8D7E4" FontSize="12"/><Border Height="18"/><StackPanel Name="Navigation" Spacing="8"/></StackPanel>
+    <StackPanel DockPanel.Dock="Bottom" VerticalAlignment="Bottom" Spacing="8"><TextBlock Name="UserLabel" Foreground="White"/><TextBlock Name="ProviderLabel" Foreground="#C8D7E4" FontSize="12" TextWrapping="Wrap"/></StackPanel>
+   </DockPanel>
+  </Border>
+  <Grid Grid.Column="1" RowDefinitions="Auto,*" Margin="30,24">
+   <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,20"><StackPanel><TextBlock Name="PageTitle" FontSize="28" FontWeight="Bold"/><TextBlock Name="PageHint" Foreground="#64748B" Margin="0,8,0,0" FontSize="14"/></StackPanel><Button Grid.Column="1" Name="BackButton" Content="← Назад" VerticalAlignment="Top" Click="BackClick"/></Grid>
+   <ContentControl Grid.Row="1" Name="PageHost"/>
+  </Grid>
+  <StackPanel Grid.Row="1" Grid.Column="1" Margin="30,0,30,16" Spacing="8"><TextBlock Name="MessageText" FontSize="14" MinHeight="24"/><Button Name="LeaveButton" IsVisible="False" Content="Перейти без сохранения" Click="LeaveClick"/></StackPanel>
+ </Grid>
+</Window>

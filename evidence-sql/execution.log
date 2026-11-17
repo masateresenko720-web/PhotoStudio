@@ -1,0 +1,98 @@
+PASS [SqlServer] Подготовка SQL Server и проверка исходной ER-модели
+PASS [SqlServer] Начальное наполнение
+PASS [SqlServer] Хранение паролей
+PASS [SqlServer] Неверный пароль
+PASS [SqlServer] Регистрация и повтор логина
+PASS [SqlServer] Длина телефона
+PASS [SqlServer] Поиск и сортировка
+PASS [SqlServer] Будний тариф 10–11
+PASS [SqlServer] Будний тариф 18–19
+PASS [SqlServer] Будний тариф 17–19
+PASS [SqlServer] Выходной и вечер
+PASS [SqlServer] Границы рабочего дня
+PASS [SqlServer] Недопустимые время и шаг
+PASS [SqlServer] Количество услуг
+PASS [SqlServer] Создание заказа и расчёт из ER
+PASS [SqlServer] Занятый зал
+PASS [SqlServer] Занятый фотограф в другом зале
+PASS [SqlServer] Соседние интервалы
+PASS [SqlServer] Прошедшая дата
+PASS [SqlServer] Защита чужого заказа
+PASS [SqlServer] Права администратора
+PASS [SqlServer] Подтверждение получения оплаты
+PASS [SqlServer] Устаревшая карточка
+PASS [SqlServer] Защита использованного тарифа
+PASS [SqlServer] Завершение съёмки
+PASS [SqlServer] Завершение назначенным фотографом после съёмки
+PASS [SqlServer] Отмена ровно за 24 часа
+PASS [SqlServer] Отмена за 23 часа 59 минут
+PASS [SqlServer] Транзакция при ошибке
+PASS [SqlServer] Отчёт
+PASS [SqlServer] Защита последнего администратора
+PASS [SqlServer] Повторная проверка роли
+PASS [SqlServer] Удаление связанных данных
+PASS [SqlServer] Скорость поиска и сортировки среди 5004 залов
+PASS [SqlServer] Два независимых процесса
+SNAP 01-login
+SAVED 01-login
+CLICK LoginButton
+DONE LoginButton Неверный логин или пароль.
+CLICK RegisterButton
+DONE RegisterButton 
+SNAP 02-register
+SAVED 02-register
+CLICK SaveButton
+DONE SaveButton Аккаунт создан. Теперь войдите в систему.
+CLICK GuestButton
+DONE GuestButton 
+SNAP 03-catalog
+SAVED 03-catalog
+CLICK Hall_2
+DONE Hall_2 
+SNAP 04-hall
+SAVED 04-hall
+CLICK LoginButton
+DONE LoginButton Вход выполнен: Клиент
+CLICK Hall_2
+DONE Hall_2 
+CLICK BookButton
+DONE BookButton 
+CLICK QuoteButton
+DONE QuoteButton 
+SNAP 05-booking
+SAVED 05-booking
+CLICK SaveButton
+DONE SaveButton Заказ № 16 создан.
+SNAP 06-orders-client
+SAVED 06-orders-client
+CLICK LoginButton
+DONE LoginButton Вход выполнен: Администратор
+SNAP 07-orders-admin
+SAVED 07-orders-admin
+CLICK ConfirmButton
+DONE ConfirmButton Бронирование подтверждено.
+SNAP 09-order-details
+SAVED 09-order-details
+SNAP 10-reference
+SAVED 10-reference
+SNAP 11-report
+SAVED 11-report
+CLICK LoginButton
+DONE LoginButton Вход выполнен: Фотограф
+SNAP 08-orders-photographer
+SAVED 08-orders-photographer
+CLICK DetailsButton
+DONE DetailsButton 
+CLICK CompleteButton
+DONE CompleteButton Завершить можно подтверждённую съёмку после её окончания.
+CLICK ExpressServer
+DONE ExpressServer 
+CLICK LocalServer
+DONE LocalServer 
+CLICK DefaultServer
+DONE DefaultServer 
+SNAP 12-connection
+SAVED 12-connection
+UI FINISHED
+PASS [SqlServer] UI: действия пользователя и 12 настоящих снимков
+Всего 36; пройдено 36; ошибок 0

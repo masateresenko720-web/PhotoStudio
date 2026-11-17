@@ -1,0 +1,4 @@
+MSBuild version 18.9.15+a8dd0577c for .NET
+  PhotoStudio.Core -> /workspace/scratch/1d6f0d6e5766/course_windows/PhotoStudio/src/PhotoStudio.Core/bin/Release/net10.0/PhotoStudio.Core.dll
+  PhotoStudio.Desktop -> /workspace/scratch/1d6f0d6e5766/course_windows/PhotoStudio/src/PhotoStudio.Desktop/bin/Release/net10.0/PhotoStudio.Desktop.dll
+  PhotoStudio.Verify -> /workspace/scratch/1d6f0d6e5766/course_windows/PhotoStudio/tests/PhotoStudio.Verify/bin/Release/net10.0/PhotoStudio.Verify.dll

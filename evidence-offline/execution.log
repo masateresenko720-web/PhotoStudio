@@ -1,0 +1,80 @@
+PASS [Offline] Будни 10–11
+PASS [Offline] Будни 18–19
+PASS [Offline] Будни 17–19
+PASS [Offline] Будни 9–10
+PASS [Offline] Выходной вечер
+PASS [Offline] Расчёт с услугой
+PASS [Offline] Недопустимое количество 0
+PASS [Offline] Недопустимое количество -1
+PASS [Offline] Недопустимое количество 101
+PASS [Offline] Количество 100
+PASS [Offline] Недопустимый интервал 10–10
+PASS [Offline] Недопустимый интервал 8.5–10
+PASS [Offline] Недопустимый интервал 10.25–11
+PASS [Offline] Недопустимый интервал 21.5–22.5
+PASS [Offline] Пароль
+PASS [Offline] Синтаксис SQL Server
+PASS [Offline] Модель EF соответствует ER
+SNAP 01-login
+SAVED 01-login
+CLICK LoginButton
+DONE LoginButton Неверный логин или пароль.
+CLICK RegisterButton
+DONE RegisterButton 
+SNAP 02-register
+SAVED 02-register
+CLICK SaveButton
+DONE SaveButton Аккаунт создан. Теперь войдите в систему.
+CLICK GuestButton
+DONE GuestButton 
+SNAP 03-catalog
+SAVED 03-catalog
+CLICK Hall_2
+DONE Hall_2 
+SNAP 04-hall
+SAVED 04-hall
+CLICK LoginButton
+DONE LoginButton Вход выполнен: Клиент
+CLICK Hall_2
+DONE Hall_2 
+CLICK BookButton
+DONE BookButton 
+CLICK QuoteButton
+DONE QuoteButton 
+SNAP 05-booking
+SAVED 05-booking
+CLICK SaveButton
+DONE SaveButton Заказ № 16 создан.
+SNAP 06-orders-client
+SAVED 06-orders-client
+CLICK LoginButton
+DONE LoginButton Вход выполнен: Администратор
+SNAP 07-orders-admin
+SAVED 07-orders-admin
+CLICK ConfirmButton
+DONE ConfirmButton Бронирование подтверждено.
+SNAP 09-order-details
+SAVED 09-order-details
+SNAP 10-reference
+SAVED 10-reference
+SNAP 11-report
+SAVED 11-report
+CLICK LoginButton
+DONE LoginButton Вход выполнен: Фотограф
+SNAP 08-orders-photographer
+SAVED 08-orders-photographer
+CLICK DetailsButton
+DONE DetailsButton 
+CLICK CompleteButton
+DONE CompleteButton Завершить можно подтверждённую съёмку после её окончания.
+CLICK ExpressServer
+DONE ExpressServer 
+CLICK LocalServer
+DONE LocalServer 
+CLICK DefaultServer
+DONE DefaultServer 
+SNAP 12-connection
+SAVED 12-connection
+UI FINISHED
+PASS [Offline] Настоящие формы на демонстрационных данных
+OFFLINE: 18/18. SQL Server НЕ проверен.

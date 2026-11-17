@@ -1,0 +1,5 @@
+{
+  "Provider": "SqlServer",
+  "ConnectionString": "Server=.\\SQLEXPRESS;Database=PhotoStudio;Integrated Security=True;Encrypt=True;TrustServerCertificate=True;Connect Timeout=10",
+  "DataDirectory": ""
+}
